@@ -36,11 +36,11 @@ body > :first-child {
   position: relative;
   background: #22272e;
   margin: 1rem 0;
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 0 1rem 1rem 1rem;
   border-radius: 0.5rem;
 }
 
-.section::before {
+/* .section::before {
   content: '';
   z-index: -1;
   position: absolute;
@@ -71,6 +71,7 @@ body > :first-child {
   background: inherit;
   border-radius: inherit;
 }
+*/
 
 /* @group Headings */
 
@@ -195,7 +196,6 @@ blockquote + figcaption:before {
 /* @group Pre-formatted and Code */
 
 pre {
-  width: 95%;
   overflow: auto;
 
   margin: 0 auto;
@@ -293,8 +293,12 @@ table tr td :last-child {
 }
 
 .sub-heading {
+  text-align: center;
+  align-self: center;
+  font-size: 1.3rem;
+  font-weight: 700;
   width: fit-content;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
 }
 
 /* @end */
